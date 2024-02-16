@@ -12,7 +12,7 @@ void loop() {
   
   int knobValue = analogRead(A0);
   Serial.println(knobValue);
-  if(knobValue >= 600){
+  if(knobValue >= 400){
     digitalWrite(led, knobValue);
   }
   else{
